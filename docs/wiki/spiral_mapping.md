@@ -1,0 +1,1 @@
+OpenMRF includes sequences and reconstruction code for fast single parameter T1, T2, and T1\(\rho\) mapping. 

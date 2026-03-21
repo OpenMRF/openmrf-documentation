@@ -1,0 +1,96 @@
+site_name: OpenMRF Documentation
+site_url: https://openmrf.github.io/documentation/
+repo_url: https://github.com/OpenMRF/core-matlab
+repo_name: OpenMRF/core-matlab
+theme:
+  name: material
+  logo: assets/fingerprint.svg
+  favicon: assets/fingerprint.svg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top  
+    - navigation.indexes
+    - content.code.copy
+    - navigation.sections
+  palette:
+    - scheme: default
+      primary: orange
+      accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    - scheme: slate
+      primary: orange
+      accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      name: Tom Griesler's LinkedIn
+      link: https://www.linkedin.com/in/tomgriesler/
+    # - icon: fontawesome/brands/github
+    #   name: Tom Griesler's GitHub
+    #   link: https://github.com/tomgriesler
+    - icon: fontawesome/regular/envelope  
+      name: Email Maximilian Gram and Tom Griesler
+      link: mailto:maximilian.gram@uni-wuerzburg.de,tomgr@med.umich.edu
+
+extra_css: 
+  - assets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: Copyright &copy; 2026 Tom Griesler
+
+nav:
+  - Home: index.md
+  - Quickstart Guide: quickstart.md
+  - Wiki: 
+    - Overview: wiki/index.md
+    - Cardiac Triggering: wiki/cardiac_triggering.md
+    - Custom Trajectories: wiki/custom_trajectories.md
+    - Dictionary Generation: wiki/dictionary_generation.md
+    - MLEV Parameters: wiki/mlev_params.md
+    - Modules: wiki/modules.md
+    - Noise Prewhitening: wiki/noise_prewhitening.md
+    # - Python Setup: wiki/python.md
+    - Scanner selection: wiki/scanner.md
+    - Spiral Single Parameter Mapping: wiki/spiral_mapping.md
+    - Timestamps: wiki/timestamps.md
+    - Trajectory Calibration: wiki/trajectory.md
+  - Troubleshooting: troubleshoot.md
+  - Team: team.md
+  - Publications: publications.md
+  - References: references.md
+  # - FAQ: faq.md

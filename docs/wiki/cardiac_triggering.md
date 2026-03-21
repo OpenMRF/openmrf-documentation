@@ -1,0 +1,3 @@
+To enable myocardial T1 and T2 mapping with MRF, the acquisition is typically split into multiple acquisition windows[^1]. Ideally, these acquisition windows are placed in the exact same cardiac phase so that the resulting parametric maps don't show any motion corruption. In order to allow the flexible placement of the acquisition window depending on the subject's heart rate, we are using Pulseq's new soft delay feature. 
+
+[^1]: Hamilton JI, Jiang Y, Chen Y, Ma D, Lo WC, Griswold M, Seiberlich N. MR fingerprinting for rapid quantification of myocardial T1 , T2 , and proton spin density. Magn Reson Med. 2017 Apr;77(4):1446-1458. doi: 10.1002/mrm.26216.
