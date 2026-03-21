@@ -1,6 +1,6 @@
 site_name: OpenMRF Documentation
 # site_url: https://openmrf.github.io/documentation/
-site_url: https://www.openmrf.org/
+site_url: https://openmrf.org/
 repo_url: https://github.com/OpenMRF/core-matlab
 repo_name: OpenMRF/core-matlab
 theme:
