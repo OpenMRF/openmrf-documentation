@@ -8,7 +8,7 @@ hide:
 The following steps briefly outline how to set up OpenMRF, compile a basic sequence, and reconstruct parametric maps from the acquired data.
 
 ## 1. Fork and clone the repository. 
-Go to <https://github.com/HarmonizedMRI/OpenMRF> and fork the repository. Then, open a terminal, navigate to the location where you want your code to live, and run 
+Go to <https://github.com/OpenMRF/core-matlab> and fork the repository. Then, open a terminal, navigate to the location where you want your code to live, and run 
 ```bash
 git clone <link-to-your-forked-repo>
 ```
