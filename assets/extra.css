@@ -1,0 +1,25 @@
+:root > * {
+  --md-primary-fg-color: #ffa00f;
+  --md-accent-fg-color: #3a79ac;
+}
+
+/* Active tab indicator */
+.md-tabs__item--active {
+  border-bottom: 4px solid var(--md-accent-fg-color);
+}
+
+.center-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.md-typeset {
+  text-align: justify;
+}
+
+/* Increase site name font size */
+/* .md-header__title { */
+  /* font-size: 30px;   /*Adjust as needed */
+/* } */
