@@ -54,6 +54,13 @@ markdown_extensions:
       generic: true
   - footnotes
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: true
+      fallback_to_build_date: true
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
