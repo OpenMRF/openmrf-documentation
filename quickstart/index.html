@@ -333,25 +333,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../references/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  References
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -500,10 +481,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-and-clone-the-repository" class="md-nav__link">
+  <a href="#0-recommended-directory-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Fork and clone the repository.
+        0. Recommended directory setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-clone-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Clone the repository.
       
     </span>
   </a>
@@ -1050,33 +1042,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    References
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1106,10 +1071,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-fork-and-clone-the-repository" class="md-nav__link">
+  <a href="#0-recommended-directory-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Fork and clone the repository.
+        0. Recommended directory setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-clone-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Clone the repository.
       
     </span>
   </a>
@@ -1217,19 +1193,41 @@
 
 <h1 id="quickstart-guide"><img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" title=":rocket:" /> Quickstart Guide</h1>
 <p>The following steps briefly outline how to set up OpenMRF, compile a basic sequence, and reconstruct parametric maps from the acquired data.</p>
-<h2 id="1-fork-and-clone-the-repository">1. Fork and clone the repository.</h2>
-<p>Go to <a href="https://github.com/OpenMRF/core-matlab">https://github.com/OpenMRF/core-matlab</a> and fork the repository. Then, open a terminal, navigate to the location where you want your code to live, and run 
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;link-to-your-forked-repo&gt;
-</span></code></pre></div></p>
+<h2 id="0-recommended-directory-setup">0. Recommended directory setup</h2>
+<p>Before cloning the main OpenMRF repository, we recommend creating a top-level folder called <code>OpenMRF</code> and keeping the main framework code separate from your individual projects. Here's a suggested example file tree: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OpenMRF/
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>|-- openmrf-core-matlab/
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>|---Pulseq_Workspace/
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|-- project_1/
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>`-- project_2/
+</span></code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You don't need to create the <code>openmrf-core-matlab</code> and <code>Pulseq_Workspace</code> subfolders manually - just follow the steps below. </p>
+</div>
+<h2 id="1-clone-the-repository">1. Clone the repository.</h2>
+<p>Go to <a href="https://github.com/OpenMRF/core-matlab">https://github.com/OpenMRF/core-matlab</a>. We recommend you fork the repository - this will allow you to make and keep track of changes while also staying up to date with our updates. Then, open a terminal, navigate to the location where you want your code to live (if you follow the above recommendation, this would be the <code>OpenMRF</code> folder), and run </p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Original repo</label><label for="__tabbed_1_2">Forked repo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;git@github.com:OpenMRF/openmrf-core-matlab.git&gt;
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;link-to-your-forked-repo&gt;
+</span></code></pre></div>
+</div>
+</div>
+</div>
 <h2 id="2-addconfirm-system-specifications">2. Add/confirm system specifications.</h2>
 <p>Navigate to <code>user_specifications/system_definitions</code> and check whether there
 exists a <code>.csv</code> file with your scanner’s system specifications. If it does, still open it and double check that the specifications listed are accurate. If it doesn’t, create a file for your scanner using one of the existing files as a template, and save it in the same location using the same naming convention.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Please be sure to double check your system specifications. Running Pulseq sequences that are compiled for a different gradient system can damage your scanner. </p>
+<p>Please be sure to double check your system specifications. Running Pulseq sequences that are compiled for a different gradient system can potentially damage your scanner. </p>
 </div>
 <p><a id='asc-info'></a>
-If you have a <code>.asc</code> file for your scanner, add it under <code>user_specifications/system_definitions/asc_files</code>. Make sure the name matches the <code>ascfile</code> field in the corresponding scanner's <code>.csv</code> file. </p>
+If you have a <code>.asc</code> file for your scanner, add it under <code>user_specifications/system_definitions/asc_files</code>. Make sure the name matches the <code>ascfile</code> field in the corresponding scanner's <code>.csv</code> file. This file is needed for PNS simulations. </p>
 <div class="admonition info">
 <p class="admonition-title"><code>.asc</code> files</p>
 <p>You don't need an <code>.asc</code> file to compile sequences. However, if your sequence happens to result in too high PNS, your sequence might not run on the scanner. </p>
@@ -1244,7 +1242,7 @@ If you have a <code>.asc</code> file for your scanner, add it under <code>user_s
 <ul>
 <li>Username: Used to sign sequences you create. Can be a combination of your first and last name, for example. Will show up in the filename of all sequences you create. </li>
 <li>Lab: Will be stored in the backup information for all sequences you create. If your lab isn’t listed, select “Other” and enter your affiliation manually. </li>
-<li>Path to backup data: This is where all your backup data will be stored. Every time you write a sequence, a subfolder will be created here containing the .seq file needed to run the sequence on the scanner, as well as backup information necessary for reconstruction. </li>
+<li>Path to backup data: This is where all your backup data will be stored. Every time you write a sequence, a subfolder will be created here containing the .seq file needed to run the sequence on the scanner, as well as backup information necessary for reconstruction. If you want all OpenMRF related code and files to live in the same location, follow the recommendation from step 0 and choose the top-level <code>OpenMRF</code> directory. </li>
 <li>Default MRI scanner: the hardware limitations of this scanner will be used per default, unless you specify a different scanner in your code. </li>
 </ul>
 <div class="admonition info">
@@ -1269,12 +1267,12 @@ If you have a <code>.asc</code> file for your scanner, add it under <code>user_s
 <ul>
 <li><code>flag_report</code>: when set to 1, a timing check report will be printed to the command window. When set to 2, additional hardware checks will be performed (takes longer). </li>
 <li><code>flag_pns</code>: when set to 1, a PNS simulation will be performed. Only works if you have a correctly named <code>.asc</code> file in the correct file location (see <a href="#asc-info">here</a>). Per default, the PNS will be simulated for an axial slice. To change this default behavior, add a line 
-<div class="language-matlab highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pns_orientation</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;coronal&#39;</span><span class="p">;</span>
+<div class="language-matlab highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">pns_orientation</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;coronal&#39;</span><span class="p">;</span>
 </span></code></pre></div></li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">PNS Simulation</p>
-<p>Even when the simulated PNS is under 100%, your sequence might not run on the scanner. Based on our experience we recommend staying under 85%. PNS can be reduced by adjusting the gradient slew rate. More information <a href="../troubleshoot/#stimulation-limit-exceeded">here</a>. </p>
+<p>Even when the simulated PNS is under 100%, your sequence might not run on the scanner. Based on our experience we recommend staying under 85%. PNS can be reduced by adjusting the gradient slew rates. More information <a href="../troubleshoot/#stimulation-limit-exceeded">here</a>. </p>
 </div>
 <ul>
 <li><code>flag_sound</code>: when set to 1, the sound resulting from gradient vibrations when running your sequence will be simulated and played by your default speaker. </li>
@@ -1293,7 +1291,7 @@ If you have a <code>.asc</code> file for your scanner, add it under <code>user_s
 <h2 id="7-reconstruct-the-data-and-create-parametric-maps">7. Reconstruct the data and create parametric maps.</h2>
 <p>In Matlab, navigate to <code>main_sequences/fingerprinting</code> and open <code>reco_mrf.m</code>. Change the variables <code>study_path</code> and <code>study_name_mrf</code> to point to your acquired data. For now, we are not correcting for trajectory imperfections, so delete or comment the line defining <code>study_name_traj</code> - in this case, the nominal trajectory will be used for reconstruction. After having updated the paths, run the file. Once the reconstruction is complete, a figure showing the final parametric maps should appear. </p>
 <h2 id="8-your-feedback-matters">8. Your feedback matters!</h2>
-<p>Please help us improve OpenMRF. If you encounter any bugs, issues, or limitations - send us an <a href="mailto:maximilian.gram@uni-wuerzburg.de,tomgr@umich.edu">email</a> or create an issue on the <a href="https://github.com/HarmonizedMRI/OpenMRF/issues">github page</a>! </p>
+<p>Please help us improve OpenMRF. If you encounter any bugs, issues, or limitations - send us an <a href="mailto:maximilian.gram@uni-wuerzburg.de,tomgr@umich.edu">email</a> or create an issue on the <a href="https://github.com/OpenMRF/openmrf-core-matlab/issues">github page</a>! </p>
 
 
 
@@ -1302,8 +1300,37 @@ If you have a <code>.asc</code> file for your scanner, add it under <code>user_s
 
 
   
+    
+  
+  
+    
   
 
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 24, 2026 12:36:32 UTC">March 24, 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 21, 2026 17:39:13 UTC">March 21, 2026</span>
+  </span>
+
+    
+    
+    
+  </aside>
 
 
 
@@ -1334,7 +1361,7 @@ If you have a <code>.asc</code> file for your scanner, add it under <code>user_s
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Tom Griesler
+      Copyright &copy; 2026 OpenMRF Team.
     </div>
   
   
