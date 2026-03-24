@@ -23,7 +23,7 @@ OpenMRF/
     You don't need to create the `openmrf-core-matlab` and `Pulseq_Workspace` subfolders manually - just follow the steps below. 
 
 ## 1. Clone the repository. 
-Go to <https://github.com/OpenMRF/core-matlab>. We recommend you fork the repository - this will allow you to make and keep track of changes while also staying up to date with our updates. Then, open a terminal, navigate to the location where you want your code to live (if you follow the above recommendation, this would be the `OpenMRF` folder), and run 
+Go to <https://github.com/OpenMRF/openmrf-core-matlab>. We recommend you fork the repository - this will allow you to make and keep track of changes while also staying up to date with our updates. Then, open a terminal, navigate to the location where you want your code to live (if you follow the above recommendation, this would be the `OpenMRF` folder), and run 
 === "Original repo"
     ```bash
     git clone <git@github.com:OpenMRF/openmrf-core-matlab.git>
@@ -47,14 +47,14 @@ If you have a `.asc` file for your scanner, add it under `user_specifications/sy
     You don't need an `.asc` file to compile sequences. However, if your sequence happens to result in too high PNS, your sequence might not run on the scanner. 
 
 ## 3. Set user definitions. 
-Open Matlab, navigate to the main OpenMRF folder. Run `install_OpenMRF.m`. 
+Open Matlab, navigate to the `openmrf-core-matlab` folder. Run `install_OpenMRF.m`. 
 
 !!! info "install_OpenMRF.m"
     Every time you reopen Matlab, you will need to run this script first in order to be able to run any other scripts. However, after the first time, it doesn't require any user input. 
     
 The first time you run this script, this will create multiple pop-up windows prompting you to enter your user information:
 
-- Username: Used to sign sequences you create. Can be a combination of your first and last name, for example. Will show up in the filename of all sequences you create. 
+- Username: Used to sign sequences you create. Can be a combination of your first and last name, for example. Will show up in the filename of all sequences you create. Please avoid special characters and white spaces. 
 - Lab: Will be stored in the backup information for all sequences you create. If your lab isn’t listed, select “Other” and enter your affiliation manually. 
 - Path to backup data: This is where all your backup data will be stored. Every time you write a sequence, a subfolder will be created here containing the .seq file needed to run the sequence on the scanner, as well as backup information necessary for reconstruction. If you want all OpenMRF related code and files to live in the same location, follow the recommendation from step 0 and choose the top-level `OpenMRF` directory. 
 - Default MRI scanner: the hardware limitations of this scanner will be used per default, unless you specify a different scanner in your code. 
@@ -68,8 +68,8 @@ OpenMRF is a comprehensive framework with many different parts to it. For gettin
 Navigate to `main_sequences/fingerprinting` and open `pulseq_mrf.m`. At the beginning of every sequence creation script, you will define five flags:
 
 - `flag_backup`: when set to 1, a `.seq` file and all corresponding backup files are saved in a subfolder in your specified backup path. When set to 0, nothing is saved. 
-!!! info "`flag_backup=2`;"
-    You may encounter comments indicating that setting `flag_backup=2` results in backing up and sending the `.seq` file. This functionality is specific to the Experimental Physics 5 group at the University of Würzburg and won't work outside of their network - please just ignore. 
+<!-- !!! info "`flag_backup=2`;"
+    You may encounter comments indicating that setting `flag_backup=2` results in backing up and sending the `.seq` file. This functionality is specific to the Experimental Physics 5 group at the University of Würzburg and won't work outside of their network - please just ignore.  -->
 !!! warning "Timestamps"
     You can only create one sequence per minute with this flag active, otherwise the timestamps used in the naming convention would be ambiguous (more information [here](wiki/timestamps.md)).
 
