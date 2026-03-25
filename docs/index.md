@@ -6,9 +6,6 @@ hide:
     - toc 
 ---
 
-<!-- !!! warning "Website under active construction"
-    Please take a look around and explore the OpenMRF documentation. Just be aware that this is work in progress and more detailed information on certain aspects of the framework will be added soon.  -->
-
 <br>
 
 <div style="text-align:center">
@@ -18,7 +15,7 @@ hide:
 <br>
 
 <div class="center-buttons">
-  <a href="quickstart" class="md-button"> 🚀 Quickstart Guide</a>
+  <a href="quickstart" class="md-button"> 🚀 Quickstart</a>
   <a href="wiki" class="md-button"> 📚 Wiki</a>
   <a href="https://github.com/OpenMRF/openmrf-core-matlab" class="md-button" target="_blank"> 💻 CODE </a>
   <!-- <a href="#citation" class="md-button"> 📝 Citation </a> -->
@@ -28,6 +25,11 @@ hide:
 
 # Welcome to OpenMRF! 
 OpenMRF is currently under active development. A corresponding publication describing the framework in detail will be released soon. Please watch out for this publication and use it for citation once available.
+
+We will present OpenMRF at ISMRM 2026 in Cape Town:
+> **Griesler T., Stebani J., Kaplan S., Angelov I., Albertova P., Blaimer M., Jakob P. M., Wech T., Zaitsev M., Chen Q., Wang X., Hamilton J., Nielsen J.-F., Nordbeck P., Seiberlich N., Gram M.**  
+> *OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq.*  
+> ISMRM 2026, Cape Town, Abstract #00659.
 
 ## New to OpenMRF? 
 We strongly recommend getting started by reading the [Quickstart guide](quickstart.md) carefully. For more detailed information on specific topics, refer to the [wiki](wiki/index.md).

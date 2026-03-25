@@ -1,36 +1,30 @@
-!!! info
-    Currently only implemented for use with the SPI readout module. 
+# Noise Pre-Whitening
 
-OpenMRF allows the easy inclusion of noise pre-whitening into your sequence. In all example sequences using the SPI readout module, this will be active per default. It requires two steps:
+OpenMRF allows easy integration of noise pre-whitening scans into your sequence. In all example MRF sequences using the SPI readout module, this feature is enabled by default.
 
-1. In the sequence creation script, add the noise pre-scans after initializing the SPI readout module and before adding any other objects to the sequence structure. 
+In the sequence creation script, add the noise prescans after initializing the SPI readout module and before adding any other objects to the sequence structure.
+
 ```matlab
-SPI.Nnoise = 16;
-SPI_add_prescans();
+SPI.Nnoise = 16;     % number of prescans
+SPI_add_prescans();  % script for adding prescans
 ```
-2. In the reconstruction script, check for pre-scans during raw data read in and, if applicable, perform the pre-whitening operation. 
-=== "Without noise pre-whitening"
-    ```matlab
-    DATA = SPI_get_rawdata(twix_obj, Nnoise);
-    DATA = permute(DATA, [3,1,2]);
-    DATA(:,:,1:adcNPad)  = [];     % adc padding
-    ```
-=== "With noise pre-whitening"
-    ```matlab
-    if isfield(PULSEQ.SPI, 'Nnoise')
-        Nnoise = PULSEQ.SPI.Nnoise;
-    else
-        Nnoise = 0;
-    end
-    [DATA, ~, ~, ~, NOISE] = SPI_get_rawdata(twix_obj, Nnoise);
-    DATA = permute(DATA, [3,1,2]); % mrf rawdata
-    DATA(:,:,1:adcNPad)  = [];     % adc padding
 
-    % noise pre-whitening
-    if ~isempty(NOISE)
-        NOISE = permute(NOISE, [3,1,2]);  % permute noise prescans
-        NOISE(:,:,1:adcNPad) = [];        % adc padding
-        DATA = mg_noise_prewhitIening(DATA, NOISE, 'cholesky', 1);
-    end
-    clear NOISE;
-    ```
+In the reconstruction script, the acquired raw data are automatically separated into `DATA` and `NOISE` arrays:
+
+```matlab
+% load MRF rawdata
+[DATA, NOISE, PULSEQ, study_info] = pulseq_read_meas(path_raw_mrf, path_backup_mrf, vendor);
+```
+
+In the `mrf_reco()` function, noise pre-whitening is automatically performed if `NOISE` is not empty. By default, the whitening matrix is computed via [Cholesky factorization](http://hansenms.github.io/sunrise/sunrise2013/Hansen_ImageReconstruction_ParallelImaging.pdf):
+
+```matlab
+% noise pre-whitening
+if ~isempty(NOISE)
+    DATA = mg_noise_prewhitening(DATA, NOISE(:,:,20:end), 'cholesky', 1);
+end
+```
+!!! note
+    `NOISE(:,:,20:end)`  
+    The first few samples are excluded from the whitening matrix calculation, as they may be affected by ADC filtering effects.  
+    The value `20` is chosen empirically and typically provides sufficient padding for stable estimation.

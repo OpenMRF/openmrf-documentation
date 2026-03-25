@@ -88,12 +88,10 @@ nav:
   - Wiki: 
     - Overview: wiki/index.md
     - Cardiac Triggering: wiki/cardiac_triggering.md
-    - Custom Trajectories: wiki/custom_trajectories.md
     - Dictionary Generation: wiki/dictionary_generation.md
-    - MLEV Parameters: wiki/mlev_params.md
-    - Modules: wiki/modules.md
     - Noise Prewhitening: wiki/noise_prewhitening.md
-    # - Python Setup: wiki/python.md
+    - Preparation Modules: wiki/preparation_modules.md
+    - Readout Modules: wiki/readout_modules.md
     - Scanner selection: wiki/scanner.md
     - Spiral Single Parameter Mapping: wiki/spiral_mapping.md
     - Timestamps: wiki/timestamps.md
