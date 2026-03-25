@@ -2,7 +2,7 @@
 hide: 
     - navigation
 ---
-## March 25, 2026 - Introducing OpenMRF
+## March 25, 2026 - Introducing OpenMRF {#2026-03-25}
 **OpenMRF is now live**! After more than three years of collaborative development, we are excited to share this project with the world on our brand-new website. OpenMRF will facilitate rapid MRF sequence prototyping and enable cross-vendor studies to improve qMRI standardization and reproducibility.
 
 As part of this release, we have moved all code to a new [GitHub Organization](https://github.com/OpenMRF) - please use the [openmrf-core-matlab](https://github.com/OpenMRF/openmrf-core-matlab) repository there going forward.
