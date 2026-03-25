@@ -15,13 +15,13 @@ hide:
 <br>
 
 <div class="center-buttons" markdown="1">
-  <a href="quickstart" class="md-button"> 🚀 Quickstart Guide</a>
+  <a href="quickstart" class="md-button"> 🚀 Quickstart</a>
   <!-- <a href="wiki" class="md-button"> 📚 Wiki</a> -->
   <!-- <a href="#citation" class="md-button"> 📝 Citation </a> -->
 <!-- </div>
 
 <!-- <div class="center-buttons" markdown="1"> -->
-[:fontawesome-brands-github: Github repository](https://github.com/OpenMRF/openmrf-core-matlab){ .md-button target="_blank" }
+[:fontawesome-brands-github: Github](https://github.com/OpenMRF/openmrf-core-matlab){ .md-button target="_blank" }
 </div>
 
 <br>
