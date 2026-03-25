@@ -93,7 +93,6 @@ nav:
     - MLEV Parameters: wiki/mlev_params.md
     - Modules: wiki/modules.md
     - Noise Prewhitening: wiki/noise_prewhitening.md
-    # - Python Setup: wiki/python.md
     - Scanner selection: wiki/scanner.md
     - Spiral Single Parameter Mapping: wiki/spiral_mapping.md
     - Timestamps: wiki/timestamps.md
@@ -101,5 +100,3 @@ nav:
   - Troubleshooting: troubleshoot.md
   - Team: team.md
   - Publications: publications.md
-  # - References: references.md
-  # - FAQ: faq.md
