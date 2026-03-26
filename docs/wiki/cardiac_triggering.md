@@ -41,7 +41,7 @@ else
 end
 ```
 
-!!! example
+!!! example "Example"
     **Goal:** diastolic acquisition window:
 
     - Average RR interval: 1000 ms  
@@ -53,13 +53,13 @@ end
     This results in a final delay of:  
     **900 ms − 600 ms = 300 ms**
 
-!!! warning
+!!! warning "Short RRs"
     If a patient’s RR interval is too short, the soft delay will be clipped to zero. This may lead to acquisition in the wrong cardiac phase and can cause missed triggers. Always verify sequence timing before in vivo scans and include a sufficient safety buffer.
 
-!!! tip
+!!! tip "Phantom tests or abdominal MRF"
     If `MRF.mode_trig` is disabled, the sequence can be used for phantom validation or abdominal imaging. In this case, the user defines a fixed segment duration (`MRF.seg_duration`, e.g. 1 s), and `MRF.delay_soft` becomes a conventional fixed delay.
 
-!!! tip
+!!! tip "Disable filling delays"
     For some MRF sequences, it may be useful to have zero delays between all segments. This can be achieved by disabling the trigger and overwriting all dynamic and soft delays:
     ```matlab
     MRF.mode_trig = 'off';

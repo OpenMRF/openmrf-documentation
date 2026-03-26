@@ -4,7 +4,7 @@ hide:
     - toc
 ---
 
-### Maximilian Gram [:fontawesome-regular-envelope:](mailto:maximilian.gram@uni-wuerzburg.de) [:material-linkedin:](https://www.linkedin.com/in/maximilian-gram-a6b846330/)
+### Maximilian Gram [:fontawesome-regular-envelope:](mailto:maximilian.gram@uni-wuerzburg.de) [:material-linkedin:](https://www.linkedin.com/in/maximilian-gram-a6b846330/) [:material-web:](https://www.physik.uni-wuerzburg.de/ep5/team/senior-scientists-postdocs/dr-maximilian-gram/) 
 is a postdoctoral researcher at the University Hospital Würzburg. He received a B.Sc., M.Sc., and PhD in Physics from the University of Würzburg. 
 ??? info "Fun Fact"
     Maximilian's MR sequence design and problem solving skills far exceed his knowledge of German language intricacies. His sworn enemy is the "Genitiv". 

@@ -89,12 +89,11 @@ nav:
     - Overview: wiki/index.md
     - Cardiac Triggering: wiki/cardiac_triggering.md
     - Dictionary Generation: wiki/dictionary_generation.md
+    - Hardware Specifications: wiki/hardware.md
     - Noise Prewhitening: wiki/noise_prewhitening.md
     - Preparation Modules: wiki/preparation_modules.md
     - Readout Modules: wiki/readout_modules.md
-    - Scanner selection: wiki/scanner.md
-    - Spiral Single Parameter Mapping: wiki/spiral_mapping.md
-    - Timestamps: wiki/timestamps.md
+    - Single Parameter Mapping: wiki/single_parameter_mapping.md
     - Trajectory Calibration: wiki/trajectory.md
   - Troubleshooting: troubleshoot.md
   - Team: team.md

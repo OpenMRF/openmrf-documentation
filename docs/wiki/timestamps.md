@@ -1,4 +1,0 @@
-In order to be able to later connect data acquired with an OpenMRF sequence with the corresponding metadata required for reconstruction and parameter mapping, each `.seq` file and corresponding backup folder include the timestamp of its creation in the filenames. This timestamp will be written into the data exported from the scanner (so far only validated for Siemens) and allow a seamless reconstruction. 
-
-!!! warning 
-    If you're trying to compile more than one sequence per minute, you will receive the following warning: `Warning: pulseq duplicate detected! .seq writing stopped!` and nothing will be saved.
