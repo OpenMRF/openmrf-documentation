@@ -91,7 +91,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-copyright: Website by Tom Griesler. <a href="#__consent">Cookie settings</a>
+copyright: Website by Tom Griesler | <a href="#__consent">Change cookie settings</a>
 
 nav:
   - Home: index.md
