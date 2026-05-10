@@ -91,7 +91,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-copyright: Copyright &copy; 2026 OpenMRF Team. This site uses Google Analytics to understand website traffic. <a href="#__consent">Change cookie settings</a>
+copyright: Copyright &copy; 2026 OpenMRF Team. <a href="#__consent">Cookie settings</a>
 
 nav:
   - Home: index.md
