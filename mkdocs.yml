@@ -62,6 +62,17 @@ plugins:
       fallback_to_build_date: true
 
 extra:
+  analytics:
+    provider: google
+    property: G-RVP54TRC2C
+  consent:
+    title: Cookie consent
+    actions:
+      - accept
+      - manage
+    description: >-
+      We use Google Analytics to understand website traffic and improve
+      documentation. You can manage your consent preferences at any time.
   social:
     - icon: fontawesome/brands/linkedin
       name: Tom Griesler's LinkedIn
@@ -80,7 +91,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-copyright: Copyright &copy; 2026 OpenMRF Team. 
+copyright: Copyright &copy; 2026 OpenMRF Team. This site uses Google Analytics to understand website traffic. <a href="#__consent">Change cookie settings</a>
 
 nav:
   - Home: index.md
