@@ -27,9 +27,9 @@ hide:
 <br>
 
 # Welcome to OpenMRF! 
-OpenMRF is currently under active development. The publication describing the framework in detail has been submitted to _Magnetic Resonance in Medicine_ as is available as a preprint on [arXiv](https://arxiv.org/abs/2604.22713). 
+OpenMRF is currently under active development. The publication describing the framework in detail has been submitted to _Magnetic Resonance in Medicine_ and is available as a preprint on [arXiv](https://arxiv.org/abs/2604.22713). 
 
-We will present OpenMRF at ISMRM 2026 in Cape Town:
+We presented OpenMRF at ISMRM 2026 in Cape Town:
 > **Griesler T., Stebani J., Kaplan S., Angelov I., Albertova P., Blaimer M., Jakob P. M., Wech T., Zaitsev M., Chen Q., Wang X., Hamilton J., Nielsen J.-F., Nordbeck P., Seiberlich N., Gram M.**  
 > *OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq.*  
 > ISMRM 2026, Cape Town, Abstract 409-03-002.
@@ -44,6 +44,8 @@ Coming soon! -->
 OpenMRF is a modular and vendor-neutral [open-source](https://github.com/OpenMRF/openmrf-core-matlab) framework for Magnetic Resonance Fingerprinting (MRF) built on the [Pulseq](https://pulseq.github.io) standard. It is built upon the MATLAB version of Pulseq by Kelvin J. Layton and Maxim Zaitsev ([doi:10.1002/mrm.26235](https://doi.org/10.1002/mrm.26235)). OpenMRF unifies all core components of the MRF workflow within a single MATLAB-based toolbox: flexible sequence generation, automated Bloch-based dictionary simulation, and low-rank image reconstruction. The provided tools support a wide range of contrast preparations and readouts (e.g., spiral, radial, rosette) and include integrated solutions for trajectory calibration, spin-lock modeling, slice profile simulation, and metadata storage. Designed for reproducibility and portability, OpenMRF enables easy deployment of MRF protocols across multiple scanner platforms, including Siemens, GE, Philips and United Imaging systems.
 
 ## Codebase overview
+The main [`openmrf-core-matlab`](https://github.com/OpenMRF/openmrf-core-matlab) repository contains the following subfolders: 
+
 - `include_cwru/`: Contains MRF-specific source code governed by a separate **End User License Agreement (EULA)** provided by Case Western Reserve University.
 
 - `include_miitt/`: Contains the low-rank reconstruction code provided by the MIITT group and Jeffrey Fessler's [MIRT toolbox](https://web.eecs.umich.edu/~fessler/code/). Includes an installation script. **Do not** add this folder manually to your MATLAB path; use the `install_OpenMRF.m` script.
@@ -59,6 +61,8 @@ OpenMRF is a modular and vendor-neutral [open-source](https://github.com/OpenMRF
 - `main_sequences/`: Example Pulseq sequences and reconstruction scripts.
 
 - `user_specifications/`: User specific definitions (automatically generated via `install_OpenMRF.m`) and MRI system specifications (create a `.csv` file for your system's gradient limits and timings).
+
+We also provide a separate [`openmrf-publications`](https://github.com/OpenMRF/openmrf-publications) repository that contains the exact sequences and reconstruction scipts that were used to obtain the results presented in OpenMRF-related publications. 
 
 ## System Requirements
 - **MATLAB** tested with R2024b and R2025a on Win11 and Ubuntu 22.04. 
