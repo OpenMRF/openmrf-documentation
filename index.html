@@ -1117,8 +1117,8 @@
 </div>
 <p><br></p>
 <h1 id="welcome-to-openmrf">Welcome to OpenMRF!</h1>
-<p>OpenMRF is currently under active development. The publication describing the framework in detail has been submitted to <em>Magnetic Resonance in Medicine</em> as is available as a preprint on <a href="https://arxiv.org/abs/2604.22713">arXiv</a>. </p>
-<p>We will present OpenMRF at ISMRM 2026 in Cape Town:</p>
+<p>OpenMRF is currently under active development. The publication describing the framework in detail has been submitted to <em>Magnetic Resonance in Medicine</em> and is available as a preprint on <a href="https://arxiv.org/abs/2604.22713">arXiv</a>. </p>
+<p>We presented OpenMRF at ISMRM 2026 in Cape Town:</p>
 <blockquote>
 <p><strong>Griesler T., Stebani J., Kaplan S., Angelov I., Albertova P., Blaimer M., Jakob P. M., Wech T., Zaitsev M., Chen Q., Wang X., Hamilton J., Nielsen J.-F., Nordbeck P., Seiberlich N., Gram M.</strong><br />
 <em>OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq.</em><br />
@@ -1132,6 +1132,7 @@ Coming soon! -->
 <h2 id="introduction">Introduction</h2>
 <p>OpenMRF is a modular and vendor-neutral <a href="https://github.com/OpenMRF/openmrf-core-matlab">open-source</a> framework for Magnetic Resonance Fingerprinting (MRF) built on the <a href="https://pulseq.github.io">Pulseq</a> standard. It is built upon the MATLAB version of Pulseq by Kelvin J. Layton and Maxim Zaitsev (<a href="https://doi.org/10.1002/mrm.26235">doi:10.1002/mrm.26235</a>). OpenMRF unifies all core components of the MRF workflow within a single MATLAB-based toolbox: flexible sequence generation, automated Bloch-based dictionary simulation, and low-rank image reconstruction. The provided tools support a wide range of contrast preparations and readouts (e.g., spiral, radial, rosette) and include integrated solutions for trajectory calibration, spin-lock modeling, slice profile simulation, and metadata storage. Designed for reproducibility and portability, OpenMRF enables easy deployment of MRF protocols across multiple scanner platforms, including Siemens, GE, Philips and United Imaging systems.</p>
 <h2 id="codebase-overview">Codebase overview</h2>
+<p>The main <a href="https://github.com/OpenMRF/openmrf-core-matlab"><code>openmrf-core-matlab</code></a> repository contains the following subfolders: </p>
 <ul>
 <li>
 <p><code>include_cwru/</code>: Contains MRF-specific source code governed by a separate <strong>End User License Agreement (EULA)</strong> provided by Case Western Reserve University.</p>
@@ -1158,6 +1159,7 @@ Coming soon! -->
 <p><code>user_specifications/</code>: User specific definitions (automatically generated via <code>install_OpenMRF.m</code>) and MRI system specifications (create a <code>.csv</code> file for your system's gradient limits and timings).</p>
 </li>
 </ul>
+<p>We also provide a separate <a href="https://github.com/OpenMRF/openmrf-publications"><code>openmrf-publications</code></a> repository that contains the exact sequences and reconstruction scipts that were used to obtain the results presented in OpenMRF-related publications. </p>
 <h2 id="system-requirements">System Requirements</h2>
 <ul>
 <li><strong>MATLAB</strong> tested with R2024b and R2025a on Win11 and Ubuntu 22.04. </li>
@@ -1208,7 +1210,7 @@ doi: https://doi.org/10.1038/nature11971</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 30, 2026 16:30:55 UTC">April 30, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 22, 2026 10:34:58 UTC">June 22, 2026</span>
   </span>
 
     
