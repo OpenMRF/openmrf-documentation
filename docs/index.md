@@ -35,7 +35,7 @@ We presented OpenMRF at ISMRM 2026 in Cape Town:
 > ISMRM 2026, Cape Town, Abstract 409-03-002.
 
 ## New to OpenMRF? 
-We strongly recommend getting started by reading the [Quickstart guide](quickstart.md) carefully. For more detailed information on specific topics, refer to the [wiki](wiki/index.md).
+We strongly recommend getting started by reading the [Quickstart guide](quickstart.md) carefully. A tutorial on how to create a custom MRF sequence can be found [here](tutorial.md). For more detailed information on specific topics, refer to the [wiki](wiki/index.md).
 
 <!-- ## Citation
 Coming soon! -->

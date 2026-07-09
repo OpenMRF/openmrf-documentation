@@ -96,6 +96,7 @@ copyright: Website by Tom Griesler | <a href="#__consent">Change cookie settings
 nav:
   - Home: index.md
   - Quickstart Guide: quickstart.md
+  - Build-Your-Sequence Tutorial: tutorial.md
   - Wiki: 
     - Overview: wiki/index.md
     - Cardiac Triggering: wiki/cardiac_triggering.md
