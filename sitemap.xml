@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://openmrf.org/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/blog/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/publications/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/quickstart/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/team/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/troubleshoot/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
+    </url>
+    <url>
+         <loc>https://openmrf.org/tutorial/</loc>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/cardiac_triggering/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/dictionary_generation/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/hardware/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/noise_prewhitening/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/preparation_modules/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/readout_modules/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/single_parameter_mapping/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
     <url>
          <loc>https://openmrf.org/wiki/trajectory/</loc>
-         <lastmod>2026-06-22</lastmod>
+         <lastmod>2026-07-15</lastmod>
     </url>
 </urlset>
