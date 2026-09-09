@@ -3,6 +3,9 @@ hide:
     - navigation
 ---
 
+## September 7, 2026 - Manuscript published at MRM
+The paper on the OpenMRF framework description and validation is now published at _Magnetic Resonance in Medicine_: [https://doi.org/10.1002/mrm.70586](https://doi.org/10.1002/mrm.70586). But the story doesn't end here - stay tuned for further updates! We are currently working on a Python version, as well as applications to cardiac and abdominal imaging. 
+
 ## April 30, 2026 - Manuscript published on arXiv
 The main manuscript describing the OpenMRF framework is now submitted to _Magnetic Resonance in Medicine_ and has been published as a preprint on [arXiv](https://arxiv.org/abs/2604.22713)! 
 

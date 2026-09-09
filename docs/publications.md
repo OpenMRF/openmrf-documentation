@@ -2,7 +2,7 @@
 hide: 
     - navigation
 ---
-The main manuscript describing the OpenMRF framework is now submitted to _Magnetic Resonance in Medicine_ and has been published as a preprint on [arXiv](https://arxiv.org/abs/2604.22713). 
+The main manuscript describing the OpenMRF framework is now published at [_Magnetic Resonance in Medicine_](https://doi.org/10.1002/mrm.70586).
 
 Below is a list of additional publications related to OpenMRF.
 

@@ -16,29 +16,23 @@ hide:
 
 <div class="center-buttons" markdown="1">
   <a href="quickstart" class="md-button"> 🚀 Quickstart</a>
-  <!-- <a href="wiki" class="md-button"> 📚 Wiki</a> -->
-  <!-- <a href="#citation" class="md-button"> 📝 Citation </a> -->
-<!-- </div>
-
-<!-- <div class="center-buttons" markdown="1"> -->
-[:fontawesome-brands-github: Github](https://github.com/OpenMRF/openmrf-core-matlab){ .md-button target="_blank" }
+  <a href="https://doi.org/10.1002/mrm.70586" class="md-button" target="_blank"> 📝 Paper</a>
+  <a href="https://github.com/OpenMRF/openmrf-core-matlab" class="md-button" target="_blank"> :fontawesome-brands-github: Github</a>
 </div>
 
 <br>
 
 # Welcome to OpenMRF! 
-OpenMRF is currently under active development. The publication describing the framework in detail has been submitted to _Magnetic Resonance in Medicine_ and is available as a preprint on [arXiv](https://arxiv.org/abs/2604.22713). 
+OpenMRF is an open-source Pulseq-based framework for Magnetic Resonance Fingerprinting prototyping and harmonization. A detailed description and validation of the framework has been published at _Magnetic Resonance in Medicine_: 
 
-We presented OpenMRF at ISMRM 2026 in Cape Town:
-> **Griesler T., Stebani J., Kaplan S., Angelov I., Albertova P., Blaimer M., Jakob P. M., Wech T., Zaitsev M., Chen Q., Wang X., Hamilton J., Nielsen J.-F., Nordbeck P., Seiberlich N., Gram M.**  
-> *OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Reproducible Magnetic Resonance Fingerprinting using Pulseq.*  
-> ISMRM 2026, Cape Town, Abstract 409-03-002.
+> **Griesler T, Stebani J, Kaplan S, Angelov I, Albert P, Wech T, Blaimer M, Wang X, Chen Q, Zaitsev M, Zhu Z, Liu Q, Martin P, Nielsen JF, Hamilton JI, Nordbeck P, Seiberlich N, Gram M**
+
+> *OpenMRF: A Modular, Vendor-Neutral Open-Source Framework for Magnetic Resonance Fingerprinting Using Pulseq*
+
+> Magn Reson Med. 2026 Sep 6. doi: [10.1002/mrm.70586](https://doi.org/10.1002/mrm.70586).
 
 ## New to OpenMRF? 
 We strongly recommend getting started by reading the [Quickstart guide](quickstart.md) carefully. A tutorial on how to create a custom MRF sequence can be found [here](tutorial.md). For more detailed information on specific topics, refer to the [wiki](wiki/index.md).
-
-<!-- ## Citation
-Coming soon! -->
 
 ## Introduction
 OpenMRF is a modular and vendor-neutral [open-source](https://github.com/OpenMRF/openmrf-core-matlab) framework for Magnetic Resonance Fingerprinting (MRF) built on the [Pulseq](https://pulseq.github.io) standard. It is built upon the MATLAB version of Pulseq by Kelvin J. Layton and Maxim Zaitsev ([doi:10.1002/mrm.26235](https://doi.org/10.1002/mrm.26235)). OpenMRF unifies all core components of the MRF workflow within a single MATLAB-based toolbox: flexible sequence generation, automated Bloch-based dictionary simulation, and low-rank image reconstruction. The provided tools support a wide range of contrast preparations and readouts (e.g., spiral, radial, rosette) and include integrated solutions for trajectory calibration, spin-lock modeling, slice profile simulation, and metadata storage. Designed for reproducibility and portability, OpenMRF enables easy deployment of MRF protocols across multiple scanner platforms, including Siemens, GE, Philips and United Imaging systems.
