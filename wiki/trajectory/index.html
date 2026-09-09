@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/fingerprint.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1179,7 +1179,7 @@
 <p>In the second section, update the path to the Pulseq workspace backup file of your MRF sequence:</p>
 <div class="language-matlab highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c">%% import SPI object for trajectory measurement</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c">% load any backup file containing an SPI object</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">load</span><span class="p">(</span><span class="s">&#39;OpenMRF/Pulseq_Workspace/user/YYMMDD/YYMMDD_HHMM/backup_YYMMDD_HHMM_workspace.mat&#39;</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">load</span><span class="p">(</span><span class="s">'OpenMRF/Pulseq_Workspace/user/YYMMDD/YYMMDD_HHMM/backup_YYMMDD_HHMM_workspace.mat'</span><span class="p">)</span>
 </span></code></pre></div>
 <hr />
 <h3 id="calibration-method">Calibration Method</h3>
@@ -1206,7 +1206,7 @@
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c">% select method</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c">% duyn:    10.1006/jmre.1998.1396</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c">% robison: 10.1002/mrm.27583</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">TRAJ</span><span class="p">.</span><span class="n">method</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;robison&#39;</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">TRAJ</span><span class="p">.</span><span class="n">method</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">'robison'</span><span class="p">;</span>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c">% number of repetitions for averaging</span>
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">TRAJ</span><span class="p">.</span><span class="n">Nav</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
@@ -1260,7 +1260,7 @@ The calibration sequence uses internally defined slice offsets.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>main_sequences/fingerprinting/reco_mrf.m
 </span></code></pre></div>
 <p>In the first section of the script, define the path to the calibration raw data:</p>
-<div class="language-matlab highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">path_raw_traj</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;...&#39;</span><span class="p">;</span>
+<div class="language-matlab highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">path_raw_traj</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">'...'</span><span class="p">;</span>
 </span></code></pre></div>
 <p>The trajectory processing is performed automatically via:</p>
 <div class="language-matlab highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">TRAJ_reco</span><span class="p">();</span>
@@ -1456,7 +1456,7 @@ The calibration sequence uses internally defined slice offsets.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes", "content.code.copy", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
